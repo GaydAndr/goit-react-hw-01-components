@@ -4,7 +4,6 @@ import s from './Profile.module.css'
 export const Profile = ({profileData}) => {
   const { username, tag, location, avatar, stats } = profileData;
   const { followers, likes, views } = stats;
-  console.log(username);
   return <div className={s.profile}>
     <div className={s.description}>
       <img

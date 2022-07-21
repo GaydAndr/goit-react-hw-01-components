@@ -27,12 +27,12 @@ export const TransactionHistory  = ({transactionsData}) => {
 };
 
 TransactionHistory.prototype = {
-  title: PropTypes.string,
   statisticsData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
     })
   ),
 };
